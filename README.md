@@ -1,4 +1,4 @@
-# nuclease
+# Nuclease Assay % Cut
 Get percent cut from nuclease assay sequencer traces
 
 The script will filter the peaks of a size you choose for the cut fragment and uncut fragment.
