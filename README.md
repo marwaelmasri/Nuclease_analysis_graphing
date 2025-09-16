@@ -11,6 +11,8 @@ Then calculate a percent cut.
 Exported as csv to graph - I prefer graphing in GraphPad Prism - easier to manipulate and alter graph features.
 
 
+
+
 traces-script.R
 
 This script will align ladder to FAM trace, convert scan size to bp, and export sizing data for graphing.
