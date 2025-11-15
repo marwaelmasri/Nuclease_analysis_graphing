@@ -16,7 +16,7 @@ library(dplyr)
 #set working directory
 #add your working directory here, use " " and use / not \
 # eg setwd("C:/Users/documents/mydata")
-setwd("C:/Users/marwa/OneDrive - University College London/Documents/Nuclease Assay/SEQ/2025-10-21")
+setwd("")
 
 
 #open file, add your own file name
@@ -63,5 +63,6 @@ percent_cut$peak_exo_percent_cut <- (percent_cut$peak_area_cut_exo / (percent_cu
 
 #export as csv
 write.csv(percent_cut, "percent_cut.csv", row.names = FALSE)
+
 
 
