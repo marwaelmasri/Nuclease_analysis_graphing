@@ -56,11 +56,12 @@ cutexo_areasum <- cut_exo %>%
 percent_cut <- cbind(cutendo_areasum, cutexo_areasum, uncut_areasum)
 
 #add percent cut column FOR ENDONUCLEASE
-percent_cut$peak_endo_percent_cut <- (percent_cut$peak_area_cut_endo / percent_cut$peak_area_uncut)*100
+percent_cut$peak_endo_percent_cut <- (percent_cut$peak_area_cut_endo / (percent_cut$peak_area_cut_endo/percent_cut$peak_area_uncut))*100
 
 #add percent cut column FOR EXONUCLEASE
-percent_cut$peak_exo_percent_cut <- (percent_cut$peak_area_cut_exo / percent_cut$peak_area_uncut)*100
+percent_cut$peak_exo_percent_cut <- (percent_cut$peak_area_cut_exo / (percent_cut$peak_area_cut_exo/percent_cut$peak_area_uncut))*100
 
 #export as csv
 write.csv(percent_cut, "percent_cut.csv", row.names = FALSE)
+
 
